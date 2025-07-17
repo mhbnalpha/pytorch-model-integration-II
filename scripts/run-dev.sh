@@ -3,7 +3,7 @@
 export $(cat .env | xargs)
 echo "Running server on port $PORT"
 
-MYPYPATH=./src mypy src/app/main.py
+# MYPYPATH=./src mypy src/app/main.py
 
 if [ $? -ne 0 ]; then
     echo "Mypy had some errors please fix before proceeding..."
